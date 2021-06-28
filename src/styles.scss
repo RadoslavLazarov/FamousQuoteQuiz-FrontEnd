@@ -1,0 +1,70 @@
+@import "~bootstrap/dist/css/bootstrap-reboot.min.css";
+@import "~bootstrap/dist/css/bootstrap-grid.min.css";
+
+@import '~@angular/material/theming';
+
+$app-green: mat-palette($mat-green);
+$app-red: mat-palette($mat-red);
+
+$success: mat-color($app-green);
+$warn: mat-color($app-red);
+
+// Material Design components
+.snackbar-success {
+  color: #fff;
+  background-color: $success;
+}
+
+.snackbar-error {
+  color: #fff;
+  background-color: $warn;
+}
+
+.help-icon {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+// Login and Register pages
+.auth {
+  &__card {
+    max-width: 500px;
+  }
+
+  &__form {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__form-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__submit {
+    height: 36px;
+  }
+
+  &__spinner {
+    margin: 0 8px;
+  }
+
+  &__server-error-message {
+    text-align: center;
+  }
+}
+
+.loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}

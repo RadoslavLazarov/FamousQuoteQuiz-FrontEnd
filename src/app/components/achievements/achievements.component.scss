@@ -1,0 +1,20 @@
+.achievements {
+  min-height: 200px;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.empty-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+mat-row {
+  padding: 10px;
+}
+
+mat-cell,
+mat-header-cell {
+  padding: 0 20px;
+}
