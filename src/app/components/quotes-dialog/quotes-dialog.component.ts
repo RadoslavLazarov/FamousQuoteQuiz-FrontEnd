@@ -93,7 +93,6 @@ export class QuotesDialogComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.data)
     this.action = this.data.action;
     this.quoteId = this.data.quoteId;
 
