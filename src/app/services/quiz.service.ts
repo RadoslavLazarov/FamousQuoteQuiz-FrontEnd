@@ -12,7 +12,7 @@ export class QuizService {
   public gameMode$: Observable<string>;
 
   constructor(private http: HttpClient) {
-    this.gameModeSubject = new BehaviorSubject<string>(localStorage.getItem('gameMode') || '');
+    this.gameModeSubject = new BehaviorSubject<string>(localStorage.getItem('gameMode') || 'BINARY');
     this.gameMode$ = this.gameModeSubject.asObservable();
   }
 
